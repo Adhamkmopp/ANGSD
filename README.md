@@ -9,4 +9,5 @@ This was a course in learning C++ through extending the [ANGDS](https://github.c
 3. Pointers/Pointers-to-pointers construction, free store dealocation, decimal types and overflow
 
 Official ANGDS repo: [ANGDS](https://github.com/ANGSD/angsd)
+
 ANGSD Publication in BMC: https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-014-0356-4
