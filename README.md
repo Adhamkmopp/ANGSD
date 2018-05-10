@@ -15,6 +15,14 @@ ANGSD Publication in BMC: https://bmcbioinformatics.biomedcentral.com/articles/1
 
 Aside from abcSum, R and ggplot were used to automate (as possible) the plot building process
 
+Files with the appropriate extension are loaded to in their respective dataframes 
+
+Base quality score by depth :: qsDep
+Base quality score by forward position:: qsPosi
+Base quality score by backward position :: qsIsop
+Base quality counts :: qsBase
+Depth counts :: sDep
+
 ```
 
 library(ggplot2)
@@ -55,8 +63,10 @@ sDepth<-  lapply(setNames(temp, make.names(temp)), function(x)
   read.table(x, sep="\t",colClasses="character"))
 subject.names <-gsub(temp, pattern=".sDepth$", replacement="")
 glist <- sapply(subject.names,function(x) NULL)
+```
 
 
+```
 drawfunction <- function(individual.names, posi,isop,baseqs,depthqs, depthbase){
   
   
